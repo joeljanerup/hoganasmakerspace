@@ -1,0 +1,62 @@
+# Annual meetings data
+# ---
+# To add a new year:
+#   1. Copy the block below and add it at the TOP of the list (newest year first)
+#   2. Create a folder under assets/pdfs/YYYY/
+#   3. Upload the PDF files to that folder and fill in the paths below
+#
+# Document values — three options:
+#   assets/pdfs/YYYY/filename.pdf  →  shown as a clickable link
+#   pending                        →  shown greyed-out as "Kommer snart" (document expected but not yet uploaded)
+#   null                           →  hidden entirely (document does not exist for this year)
+#
+# Example entry:
+#
+# - year: 2027
+#   documents:
+#     invitation:          assets/pdfs/2027/kallelse.pdf
+#     activity_report:     assets/pdfs/2027/verksamhetsberattelse.pdf
+#     business_plan:       assets/pdfs/2027/verksamhetsplan.pdf
+#     selection_committee: assets/pdfs/2027/valberedningens-forslag.pdf
+#     protocol:            pending   # set to path once uploaded, null if it will never exist
+
+- year: 2026
+  documents:
+    invitation:          assets/pdfs/2026/kallelse.pdf
+    activity_report:     assets/pdfs/2026/verksamhetsberattelse.pdf
+    business_plan:       assets/pdfs/2026/verksamhetsplan.pdf
+    selection_committee: assets/pdfs/2026/valberedningens-forslag.pdf
+    protocol:            assets/pdfs/2026/protokoll-arsmote-2026.pdf
+
+- year: 2025
+  documents:
+    invitation:          assets/pdfs/2025/kallelse.docx
+    activity_report:     assets/pdfs/2025/verksamhetsberattelse.docx
+    business_plan:       assets/pdfs/2025/verksamhetsplan.docx
+    selection_committee: assets/pdfs/2025/valberedningens-forslag.docx
+    protocol:            pending
+
+- year: 2024
+  documents:
+    invitation:          assets/pdfs/2024/kallelse.pdf
+    activity_report:     assets/pdfs/2024/verksamhetsberattelse.pdf
+    business_plan:       assets/pdfs/2024/verksamhetsplan.pdf
+    selection_committee: assets/pdfs/2024/valberedningens-forslag.pdf
+    protocol:            assets/pdfs/2024/protokoll.pdf
+
+- year: 2023
+  documents:
+    invitation:          assets/pdfs/2023/kallelse.pdf
+    activity_report:     assets/pdfs/2023/verksamhetsberattelse.pdf
+    business_plan:       assets/pdfs/2023/verksamhetsplan.pdf
+    selection_committee: null
+    protocol:            assets/pdfs/2023/protokoll.pdf
+
+- year: 2022
+  documents:
+    invitation:          null
+    activity_report:     assets/pdfs/2022/verksamhetsberattelse.pdf
+    business_plan:       assets/pdfs/2022/verksamhetsplan.pdf
+    selection_committee: null
+    protocol:            assets/pdfs/2022/protokoll.pdf
+

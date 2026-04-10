@@ -1,0 +1,203 @@
+---
+---
+
+/* Custom styling for page-specific banner images */
+
+/* Override banner background to use page images */
+#banner.style2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Ensure images in banner don't display as inline elements */
+#banner .image {
+  display: none !important;
+}
+
+/* Opening hours styling (used in address and contact) */
+.split section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.split section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 0;
+}
+
+
+.split section ul li:last-child {
+  border-bottom: none;
+}
+
+.split section ul li span {
+  font-weight: 500;
+  color: #f3efe7;
+}
+
+.split section ul li strong {
+  color: #9E6C54;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+
+/* Spotlights styling for annual meetings */
+.spotlights > section {
+  border-left: 4px solid #9E6C54;
+  margin-bottom: 1.5em;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.spotlights > section > .content {
+  width: 100%;
+}
+
+.spotlights h3 {
+  margin-top: 0;
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.spotlights ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spotlights ul li {
+  font-size: 0.95em;
+  line-height: 1.8;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.spotlights a {
+  transition: color 0.2s ease;
+}
+
+.spotlights a:hover {
+  color: #9E6C54;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 736px) {
+  .spotlights ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  
+  .spotlights ul li {
+    white-space: normal;
+  }
+}
+
+
+/* Show Instagram only on desktop */
+#instagram { display: none; }
+@media (min-width: 1024px) {
+  #instagram { display: block; }
+}
+
+/* SnapWidget container: enforce square grid-like height and responsive sizing */
+.snapwidget-container {
+  width: 100%;
+  max-width: 765px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1; /* keep square so widget renders as 3x3 grid */
+  height: auto;
+}
+
+.snapwidget-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* Fallback for browsers without aspect-ratio support */
+@supports not (aspect-ratio: 1/1) {
+  .snapwidget-container { position: relative; padding-bottom: 100%; height: 0; }
+  .snapwidget-container iframe { position: absolute; top: 0; left: 0; height: 100%; }
+}
+
+/* Override theme #contact styling */
+#contact {
+  border-bottom: solid 1px rgba(158,108,84,.2);
+  overflow-x: hidden;
+}
+
+#contact > .inner {
+  display: flex;
+  padding: 0 !important;
+}
+
+#contact > .inner > :nth-child(2n - 1) {
+  padding: 4em 0 0 0;
+  border-right: solid 1px rgba(158,108,84,.2);
+  width: 60%;
+  z-index: 1;
+}
+
+#contact > .inner > :nth-child(2n) {
+  padding-left: 3em;
+  width: 40%;
+}
+
+#contact > .inner > .split {
+  padding: 0;
+}
+
+#contact > .inner > .split > * {
+  padding: 4em 0 0 3em;
+  position: relative;
+}
+
+#contact > .inner > .split > *:before {
+  border-top: solid 1px rgba(158,108,84,.2);
+  content: '';
+  display: block;
+  margin-left: -3em;
+  position: absolute;
+  top: 0;
+  width: calc(100vw + 3em);
+}
+
+#contact > .inner > .split > :first-child:before {
+  display: none;
+}
+
+@media (max-width: 736px) {
+  #contact > .inner {
+    display: block;
+  }
+
+  #contact > .inner > :nth-child(2n - 1) {
+    padding: 4em 0 0 0;
+    border-right: 0;
+    width: 100%;
+  }
+
+  #contact > .inner > :nth-child(2n) {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  #contact > .inner > .split > * {
+    padding: 3em 0 0 0;
+  }
+}
+
+
+
+

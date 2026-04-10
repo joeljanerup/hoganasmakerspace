@@ -1,0 +1,53 @@
+# site settings
+title: Höganäs Makerspace
+subtitle: Ideell förening
+email: elisabet@hoganasmakerspace.se
+description: Kreativt skapande för alla i Höganäs
+baseurl: "" # leave empty for user/org GitHub Pages
+url: https://hoganasmakerspace.github.io
+author: Höganäs Makerspace
+street_address: Smältaregatan 7
+city: Höganäs
+state:
+zip_code: 263 39
+country: Sverige
+phone:
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 3
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  Facebook: https://www.facebook.com/groups/HoganasMakerspace/
+  Instagram: https://www.instagram.com/hoganasmakerspace/
+
+
+# build settings
+markdown: kramdown
+
+lang: sv
+
+logo: assets/images/pic01.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+social:
+  name: Höganäs Makerspace
+  links:
+    - https://www.facebook.com/groups/HoganasMakerspace/
+    - https://www.instagram.com/hoganasmakerspace/
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 

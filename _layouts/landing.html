@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ site.lang | default: "sv" }}">
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+        <section id="banner" class="style2" {% if page.image %}style="background-image: url('{{ site.baseurl }}/{{ page.image }}');"{% endif %}>
+            <div class="inner">
+                <span class="image">
+                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+                </span>
+                <header class="major">
+
+                    <h1>{{ page.title }}</h1>
+
+                </header>
+                <div class="content">
+
+                    {{ page.description }}
+
+                </div>
+            </div>
+        </section>
+
+    {{ content }}
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="inner">
+            <section>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Adress</label>
+                            <p>
+                                <strong>{{ site.title }}</strong><br />
+                                {{ site.street_address }}<br />
+                                {{ site.zip_code }} {{ site.city }}
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="split">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="hours">Öppettider</label>
+                                {% include opening-hours.html %}
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
