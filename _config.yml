@@ -3,8 +3,8 @@ title: Höganäs Makerspace
 subtitle: Ideell förening
 email: elisabet@hoganasmakerspace.se
 description: Kreativt skapande för alla i Höganäs
-baseurl: "" # leave empty for user/org GitHub Pages
-url: https://hoganasmakerspace.github.io
+baseurl: "/hoganasmakerspace" # project page — repo is joeljanerup/hoganasmakerspace
+url: https://joeljanerup.github.io
 author: Höganäs Makerspace
 street_address: Smältaregatan 7
 city: Höganäs
