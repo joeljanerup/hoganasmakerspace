@@ -26,7 +26,7 @@
     activity_report:     assets/pdfs/2026/verksamhetsberattelse.pdf
     business_plan:       assets/pdfs/2026/verksamhetsplan.pdf
     selection_committee: assets/pdfs/2026/valberedningens-forslag.pdf
-    protocol:            assets/pdfs/2026/protokoll-arsmote-2026.pdf
+    protocol:            pending
 
 - year: 2025
   documents:
