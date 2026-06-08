@@ -1,0 +1,8 @@
+<ul style="list-style: none; padding: 0; margin: 0;">
+    {% for hour in site.data.opening_hours %}
+    <li style="display: flex; justify-content: space-between; padding: 0.5em 0;">
+        <span>{{ hour.day }}</span>
+        <strong style="color: #9E6C54;">{{ hour.time }}</strong>
+    </li>
+    {% endfor %}
+</ul>

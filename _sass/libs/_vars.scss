@@ -1,0 +1,73 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		menu:				0.35s,
+		transition:			0.2s,
+		banner:				2.5s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		element-height:		2.75em,
+		element-margin:		2em,
+		inner:				65em
+	);
+
+// Font.
+	$font: (
+		family:				('Source Sans Pro', Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				300,
+		weight-bold:		600,
+		letter-spacing:		0.025em,
+		letter-spacing-alt:	0.25em
+	);
+
+// Palette.
+	// SWEDISH/NORDIC THEME (Updated 2026-04-03)
+	// Mörkbrun (Dark Brown): #4A3B29
+	// Krämvit (Cream White): #F3EFE7
+	// Tegelröd (Brick Red): #9E6C54
+	$palette: (
+		bg:					#4A3B29,
+		bg-alt:				#3d2f21,
+		fg:					#F3EFE7,
+		fg-bold:			#F3EFE7,
+		fg-light:			rgba(243,239,231,0.25),
+		border:				rgba(158,108,84,0.2),
+		border-bg:			rgba(158,108,84,0.08),
+		highlight:			#9E6C54,
+		accent1:			#9E6C54,
+		accent2:			#6b5344,
+		accent3:			#9E6C54,
+		accent4:			#8b6850,
+		accent5:			#a97660,
+		accent6:			#9E6C54
+	);
+
+	// ===== REVERT TO ORIGINAL COLORS =====
+	// If you want to go back to the original theme:
+	// Uncomment the block below and comment out the Swedish/Nordic palette above
+	/*
+	$palette: (
+		bg:					#242943,
+		bg-alt:				#2a2f4a,
+		fg:					#ffffff,
+		fg-bold:			#ffffff,
+		fg-light:			rgba(244,244,255,0.2),
+		border:				rgba(212,212,255,0.1),
+		border-bg:			rgba(212,212,255,0.035),
+		highlight:			#9bf1ff,
+		accent1:			#6fc3df,
+		accent2:			#8d82c4,
+		accent3:			#ec8d81,
+		accent4:			#e7b788,
+		accent5:			#8ea9e8,
+		accent6:			#87c5a4
+	);
+	*/
