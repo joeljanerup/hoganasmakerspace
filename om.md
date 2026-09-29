@@ -162,6 +162,9 @@ image: assets/images/IMG_3154.jpeg
         <span class="sponsor-item">
           <img src="{{ "assets/images/sponsors/hoganas-kommun.png" | relative_url }}" alt="Höganäs Kommun" />
         </span>
+        <span class="sponsor-item">
+          <img src="{{ "assets/images/sponsors/logo-indieprints-lang.png" | relative_url }}" alt="Indieprints" />
+        </span>
         <span class="sponsor-item sponsor-text">Optimera<br />Höganäs</span>
         <span class="sponsor-item">
           <img src="{{ "assets/images/sponsors/stiftelsen-gripen.png" | relative_url }}" alt="Stiftelsen Gripen" />
